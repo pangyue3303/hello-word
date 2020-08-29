@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+html,
+body {
+	height: 100%;
+
+}
+
+.header {
+	height: 70px;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	box-shadow: 5px 5px 5px #EEEEEE;
+}
+
+.header .zuotu {
+	float: left;
+	height: 67%;
+	width: 120px;
+	margin-left: 4%;
+	background: url(../img/headerzuo.png) no-repeat center center;
+	background-size: cover;
+	margin-top: 13px;
+}
+
+.header .youcaidan {
+	float: right;
+	height: 100%;
+	width: 60%;
+
+}
+
+.header .youcaidan ul {
+	box-sizing: border-box;
+	margin-left: 19px;
+}
+
+.header .youcaidan ul li {
+	float: left;
+	/* padding: 0.6%; */
+	line-height: 50px;
+	font-size: 17px;
+	box-sizing: border-box;
+	cursor: pointer;
+	padding-top: 1%;
+	padding-left: 1%;
+}
+
+.header .youcaidan ul li a:hover {
+	color: #245580;
+}
+
+.header .youcaidan ul li:first-child {
+	color: #122B40;
+	border-top: 1px solid #666;
+}
+
+
+/* 菜单动画 */
+
+.header .youcaidan ul li:nth-child(6) dl dd {
+	background-color: white;
+	font-size: 15px;
+	text-align: center;
+	border-bottom: 1px solid #666;
+}
+.header .youcaidan ul li:nth-child(6) dl dd:hover {
+	color: #262626;
+}
+.header .youcaidan ul li:nth-child(6) dl dd a{
+	transition: all 0.5s;
+}
+.header .youcaidan ul li:nth-child(6) dl dd a:hover{
+	display: inline-block;
+	transform: translateX(10px);
+	
+}
+
+.header .youcaidan ul li:nth-child(6) dl {
+	display: none;
+	margin-left: -20px;
+}
+
+/* yilou */
+.yilou {
+	width: 100%;
+	height: 240px;
+	padding-top: 170px;
+}
+
+.yilou .container .biaoti {
+	width: 100%;
+
+
+}
+
+.h {
+	text-align: center;
+	margin-bottom: 10px;
+	color: #444444;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.p {
+	margin-left: 0px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.changp {
+	margin-top: 50px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #6A6A6A;
+}
+
+.erlou {
+	width: 100%;
+	height: 1230px;
+}
+
+.erlou .container ul li {
+	padding-bottom: 10px;
+	padding-top: 15px;
+	height: 70px;
+	width: 100%;
+	border-bottom: 1px dotted #666;
+	line-height: 70px;
+
+}
+
+.erlou .container ul li:first-child {
+	border-top: 1px dotted #666;
+}
+
+.erlou .container ul li span:first-child {
+	font-size: 19px;
+	color: #6A6A6A;
+}
+
+.erlou .container ul li span:last-child {
+	font-size: 14px;
+	color: #6A6A6A;
+}
+
+.yejiao {
+	width: 100%;
+	height: 70px;
+	background-color: #F4F4F4;
+	line-height: 70px;
+	font-size: 17px;
+}
+
+.yejiao .container {
+	border-top: 1px solid #E4E4E4;
+}
+
+.yejiao .container span {
+	margin-left: 80px;
+}
+
+.yejiao .container img {}
+.dibudonghua {
+	width: 60px;
+	height: 60px;
+	/* background-color: #666666; */
+	position: fixed;
+	top: 660px;
+	left: 50%;
+	margin-left: 560px;
+}
+.dibudonghua span{
+	font-size: 50px;
+}
+
+/* xingyings */
+@media all and (max-width:1200px){
+	.container {
+		width: 90%;
+	}
+}
+@media all and (max-width:1120px) {
+	.container {
+		width: 90%;
+	}
+    
+	/* toubuxiangying */
+	.header .zuotu {
+		float: left;
+		height: 67%;
+		width: 120px;
+		margin-left: calc((100% - 120px) / 2);
+		background: url(../img/headerzuo.png) no-repeat center center;
+		background-size: cover;
+		margin-top: 13px;
+	}
+
+	.header .youcaidan {
+		float: left;
+		height: 0;
+		width: 0;
+		margin-left: 0;
+		overflow: hidden;
+
+	}
+
+	.header .youcaidan ul {
+		margin-left: 0;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	.header .youcaidan ul li {
+		float: left;
+		padding: 0px;
+		line-height: 0px;
+		font-size: 0px;
+		height: 0;
+		width: 0;
+
+		overflow: hidden;
+	}
+
+	/* neirongxingy */
+	.yilou {
+		width: 100%;
+		height: 240px;
+		padding-top: 170px;
+		background-color: #F8F8F8;
+	}
+
+	.erlou {
+		width: 100%;
+		height: 1230px;
+		background-color: #F8F8F8;
+	}
+
+	.erlou .container ul li {
+		padding-bottom: 10px;
+		padding-top: 15px;
+		height: 70px;
+		width: 100%;
+		border-bottom: 1px dotted #666;
+		line-height: 70px;
+		overflow: hidden;
+
+	}
+
+
+
+	.yejiao .container span {
+		display: inline;
+		width: 0;
+		height: 0;
+		overflow: hidden;
+		display: none;
+		background-color: #F8F8F8;
+	}
+
+	.yejiao .container img {
+		height: 0;
+		width: 0;
+	}
+
+	.yejiao {
+		width: 100%;
+		height: 70px;
+		background-color: #F4F4F4;
+		line-height: 70px;
+		font-size: 15px;
+	}
+}

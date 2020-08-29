@@ -1,0 +1,359 @@
+@charset "utf-8";
+
+html,
+body {
+	height: 100%;
+
+}
+
+.header {
+	height: 70px;
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	box-shadow: 5px 5px 5px #EEEEEE;
+}
+
+.header .zuotu {
+	float: left;
+	height: 67%;
+	width: 120px;
+	margin-left: 4%;
+	background: url(../img/headerzuo.png) no-repeat center center;
+	background-size: cover;
+	margin-top: 13px;
+}
+
+.header .youcaidan {
+	float: right;
+	height: 100%;
+	width: 60%;
+
+}
+
+.header .youcaidan ul {
+	box-sizing: border-box;
+	margin-left: 19px;
+}
+
+.header .youcaidan ul li {
+	float: left;
+	/* padding: 0.6%; */
+	line-height: 50px;
+	font-size: 17px;
+	box-sizing: border-box;
+	cursor: pointer;
+	padding-top: 1%;
+	padding-left: 1%;
+}
+
+.header .youcaidan ul li a:hover {
+	color: #245580;
+}
+
+.header .youcaidan ul li:first-child {
+	color: #122B40;
+	border-top: 1px solid #666;
+}
+
+
+
+/* 菜单动画 */
+
+.header .youcaidan ul li:nth-child(6) dl dd {
+	background-color: white;
+	font-size: 15px;
+	text-align: center;
+	border-bottom: 1px solid #666;
+}
+.header .youcaidan ul li:nth-child(6) dl dd:hover {
+	color: #262626;
+}
+.header .youcaidan ul li:nth-child(6) dl dd a{
+	transition: all 0.5s;
+}
+.header .youcaidan ul li:nth-child(6) dl dd a:hover{
+	display: inline-block;
+	transform: translateX(10px);
+	
+}
+
+.header .youcaidan ul li:nth-child(6) dl {
+	display: none;
+	margin-left: -20px;
+}
+
+/* bannercss */
+.banner {
+	height: 400px;
+	width: 100%;
+	background: url(../img/shui1.jpg) no-repeat center center;
+	background-size: cover;
+
+}
+
+.louyi {
+	width: 100%;
+	height: 800px;
+
+}
+
+.louyi .container .biaoti {
+	width: 100%;
+	margin-top: 50px;
+
+}
+
+.h {
+	text-align: center;
+	margin-bottom: 10px;
+	color: #444444;
+	font-weight: bold;
+	font-size: 32px;
+}
+
+.p {
+	margin-left: 0px;
+	text-align: center;
+}
+
+.louyi .neirongshang {
+	width: 100%;
+	height: 300px;
+	margin-top: 50px;
+}
+/* .louyi .neirongshang .fu{
+	height: 90%;
+	width: 510px;
+	float: left;
+	overflow: hidden;
+} */
+.louyi .neirongshang .tupian {
+	height: 90%;
+	width: 510px;
+	float: left;
+	background: url(../img/shuiye2.jpg) no-repeat center center;
+	background-size: cover;
+}
+/* .louyi .neirongshang .tupian{
+	transition: all 2s;
+}
+.louyi .neirongshang .tupian:hover{
+	transform: scale(1.2,1.2);
+} */
+.louyi .neirongshang .wenzi {
+	float: right;
+	height: 100%;
+	width: calc(100% - 580px);
+	font-size: 15.5px;
+	color: #6A6A6A;
+}
+
+.louyi .neirongxia {
+	width: 100%;
+	height: calc(100% - 400);
+	margin-top: 50px;
+	font-size: 15.5px;
+	color: #6A6A6A;
+	border-bottom: 1px dotted #E1E1E1;
+	padding-bottom: 30px;
+	line-height: 25px;
+}
+
+.erlou {
+	height: 470px;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.erlou .womendeshiming {
+	width: 100%;
+	height: 250px;
+}
+
+.erlou .womendeshiming p:first-child {
+	font-size: 24px;
+	color: #333333;
+}
+
+.erlou .womendeshiming p:nth-child(2) {
+	font-size: 15px;
+	color: #989898;
+}
+
+.erlou .womendeshiming p:last-child {
+	font-size: 15px;
+	margin-top: 40px;
+	color: #6A6A6A;
+	line-height: 25px;
+}
+
+.erlou .womendeyuanjing {
+	width: 100%;
+	height: 250px;
+}
+
+.erlou .womendeyuanjing p:first-child {
+	font-size: 24px;
+	color: #333333;
+}
+
+.erlou .womendeyuanjing p:nth-child(2) {
+	font-size: 15px;
+	color: #989898;
+	font-size: 14px;
+}
+
+.erlou .womendeyuanjing p:nth-child(3) {
+	margin-top: 40px;
+	color: #6A6A6A;
+	line-height: 25px;
+	font-size: 15px;
+}
+
+.erlou .womendeyuanjing p:last-child {
+	color: #6A6A6A;
+	line-height: 25px;
+	font-size: 15px;
+}
+
+.yejiao {
+	width: 100%;
+	height: 70px;
+	background-color: #F4F4F4;
+	line-height: 70px;
+	font-size: 17px;
+}
+
+.yejiao .container span {
+	margin-left: 80px;
+}
+
+.yejiao .container img {}
+.dibudonghua {
+	width: 60px;
+	height: 60px;
+	/* background-color: #666666; */
+	position: fixed;
+	top: 660px;
+	left: 50%;
+	margin-left: 560px;
+}
+.dibudonghua span{
+	font-size: 50px;
+}
+@media all and (max-width:1200px){
+	.container {
+		width: 90%;
+	}
+}
+/* 响应式 */
+@media all and (max-width:960px) {
+	.container {
+		width: 90%;
+	}
+
+	/* 头部响应 */
+	.header .zuotu {
+		float: left;
+		height: 67%;
+		width: 120px;
+		margin-left: calc((100% - 120px) / 2);
+		background: url(../img/headerzuo.png) no-repeat center center;
+		background-size: cover;
+		margin-top: 13px;
+	}
+
+	.header .youcaidan {
+		height: 0;
+		width: 0;
+		overflow: hidden;
+
+
+	}
+
+	.header .youcaidan ul {
+		height: 0;
+		width: 0;
+		overflow: hidden;
+	}
+
+	.header .youcaidan ul li {
+		height: 0;
+		width: 0;
+		overflow: hidden;
+	}
+	/* 一楼响应 */
+	.louyi {
+		width: 100%;
+		height: 1050px;
+	
+	}
+	
+	.louyi .container .biaoti {
+		width: 50%;
+		margin-top: 50px;
+		margin-left: calc((100% - 50%) / 2);
+	}
+	.louyi .neirongshang {
+		width: 100%;
+		height: 420px;
+		margin-top: 50px;
+	}
+	
+	.louyi .neirongshang .tupian {
+		height: 50%;
+		width: 40%;
+		background: url(../img/shuiye2.jpg) no-repeat center center;
+		background-size: cover;
+		margin-left: 30%;
+	}
+	
+	.louyi .neirongshang .wenzi {
+		margin-top: 20px;
+		height: 100px;
+		width: 100%;
+		font-size: 15.5px;
+		color: #6A6A6A;
+	}
+	.louyi .neirongxia {
+		width: 100%;
+		height: 300px;
+		font-size: 15.5px;
+		color: #6A6A6A;
+		border-bottom: 1px dotted #E1E1E1;
+	}
+	.erlou {
+		height: 550px;
+		width: 100%;
+		margin-top: 20px;
+	}
+	.erlou .womendeshiming {
+		width: 100%;
+		height: 300px;
+	}
+	.erlou .womendeyuanjing {
+		width: 100%;
+		height: 300px;
+	}
+	
+	.yejiao {
+		width: 100%;
+		height: 70px;
+		background-color: #F4F4F4;
+		line-height: 70px;
+		font-size: 15px;
+	}
+	
+	.yejiao .container span {
+		display: none;
+	}
+	
+	.yejiao .container img {
+		height: 0;
+		width: 0;
+	}
+}
